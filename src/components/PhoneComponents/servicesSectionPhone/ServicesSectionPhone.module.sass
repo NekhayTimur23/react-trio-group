@@ -1,0 +1,37 @@
+.servicesSection
+    max-width: 100%
+    min-height: 40vh
+    border-radius: 10px
+    background: #fff
+    overflow: hidden
+    color: rgb(255, 255, 255)
+    margin-bottom: calc(15px + (20 - 15)*(100vw - 320px) / (1024 - 320))
+    background: url("../../../../public/about/henry-co-3coKbdfnAFg-unsplashv2.png") center/cover
+    
+    h1
+        text-align: center
+        font-size: calc(20px + (24 - 20)*(100vw - 320px) / (1024 - 320))
+        margin: calc(5px + (10 - 5)*(100vw - 320px) / (1024 - 320))
+    .servicesContant
+        padding: calc(20px + (40 - 20)*(100vw - 320px) / (1024 - 320))
+        .servicesListTitle
+            text-align: center
+            padding: calc(6px + (10 - 6)*(100vw - 320px) / (1024 - 320))
+            background-color: rgba(239, 210, 164, 0.628)
+            border-radius: 10px
+            color: #000
+            margin-bottom: calc(5px + (10 - 5)*(100vw - 320px) / (1024 - 320))
+        h3
+            font-size: calc(18px + (20 - 18)*(100vw - 320px) / (1024 - 320))
+            margin-bottom: calc(5px + (10 - 5)*(100vw - 320px) / (1024 - 320))
+        p
+            font-size: calc(14px + (18 - 14)*(100vw - 320px) / (1024 - 320))
+            margin:  calc(5px + (10 - 5)*(100vw - 320px) / (1024 - 320))
+    .servicesListText
+        transition: opacity 0.2s, max-height 0.2s ease
+        opacity: 0
+        max-height: 0
+        overflow: hidden
+    .active
+        opacity: 1
+        max-height: 500px

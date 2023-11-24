@@ -1,0 +1,62 @@
+.modelNav
+    position: absolute
+    display: flex
+    align-items: center
+    min-width: 30%
+    transition: right 0.5s ease
+    top: 0
+    right: 0
+    min-width: 10vh
+    flex-direction: column
+    padding: 20px  calc(20px + (40 - 20)*(100vw - 320px) / (1024 - 320))
+    background: rgb(255, 255, 255)
+    border-radius: 0 0 0 10px
+    box-shadow:  -5px 5px 10px rgba(0, 0, 0, 0.35)
+    .modelNavContent
+        display: block
+        div
+            margin: 10px 0
+            padding: calc(16px + (20 - 16)*(100vw - 320px) / (1024 - 320))
+            border: 1px solid rgb(62, 62, 62)
+            border-radius: calc(5px + (10 - 5)*(100vw - 320px) / (1024 - 320))
+            text-align: center
+            transition: background-color .3s ease, color .3s ease
+            span
+                margin: 0 calc(20px + (40 - 20)*(100vw - 320px) / (1024 - 320))
+                font-size:  calc(16px + (20 - 16)*(100vw - 320px) / (1024 - 320))
+            &:active
+                background-color: #818181
+                color: #f6f6f6
+    .button
+        display: inline
+        margin: auto
+        border-radius: 5px
+        transition: background-color .3s ease, color .3s ease
+        user-select: none
+    .buttonCall
+        padding: calc(15px + (20 - 15)*(100vw - 320px) / (1024 - 320))
+        background-color:  rgb(255, 95, 30)
+        // margin: calc(16px + (20 - 16)*(100vw - 320px) / (1024 - 320))
+        color: rgb(252, 252, 252)
+        font-size: calc(15px + (20 - 15)*(100vw - 320px) / (1024 - 320))
+        &:active
+            background-color:  rgba(255, 94, 30, 0.535)
+            color: rgb(38, 38, 38)
+    .buttonClose
+        padding: calc(10px + (15 - 10)*(100vw - 320px) / (1024 - 320)) 
+        background-color:  rgba(126, 126, 126, 0.498)
+        &:active
+            background-color:  rgba(126, 126, 126, 0.212)
+    .socialNetworkBlock
+        .socialNetworkButtom
+            display: inline-flex
+            background-color: rgb(255, 95, 30)
+            padding: calc(15px + (20 - 15)*(100vw - 320px) / (1024 - 320))
+            border-radius: 10px
+            margin: calc(10px + (15 - 10)*(100vw - 320px) / (1024 - 320))
+            img
+                width: calc(20px + (40 - 20)*(100vw - 320px) / (1024 - 320))
+            &:active
+                background-color: rgb(0, 0, 0)
+.modelNavOff
+    right: -100%

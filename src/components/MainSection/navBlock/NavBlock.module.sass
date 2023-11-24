@@ -1,0 +1,47 @@
+.nav
+    width: 100%
+    height: 21px
+    display: flex
+    justify-content: center
+    align-items: center
+    .navContainer
+        display: flex
+        justify-content: center
+        margin-bottom: 1vw
+        span
+            color: #ffffff
+            font-family: 'Oswald', sans-serif
+            font-size: calc(14px + (18 - 14)*(100vw - 1024px) / (2568 - 1024))
+            letter-spacing: calc(1px + (2 - 1)*(100vw - 1024px) / (2568 - 1024))
+        div 
+            cursor: pointer
+            border: 3px solid transparent
+            padding: calc(7px + (11 - 7)*(100vw - 1024px) / (2568 - 1024))
+            margin: 0 calc(11px + (30 - 11)*(100vw - 1024px) / (2568 - 1024))
+            border-radius: calc(6px + (10 - 6)*(100vw - 1024px) / (2568 - 1024))
+            transition: border-color 0.3s ease
+            &:hover
+                border-color: rgb(255, 95, 30)
+    .navFixed
+        display: flex
+        width: 100%
+        margin: 1vmin auto
+        transition: top 0.3s ease
+        position: fixed
+        z-index: 1000
+        background: linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.499),rgba(0, 0, 0, 0))
+        
+        span
+            color: #ffffff
+            font-family: 'Oswald', sans-serif
+            font-size: 16px
+            letter-spacing: 2px
+        div 
+            cursor: pointer
+            border: 3px solid transparent
+            padding: calc(7px + (11 - 7)*(100vw - 1024px) / (2568 - 1024))
+            margin: 0 calc(11px + (30 - 11)*(100vw - 1024px) / (2568 - 1024))
+            border-radius: calc(6px + (10 - 6)*(100vw - 1024px) / (2568 - 1024))
+            transition: border-color 0.3s ease
+            &:hover
+                border-color: rgb(255, 95, 30)

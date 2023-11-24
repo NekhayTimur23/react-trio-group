@@ -1,0 +1,65 @@
+.modalCall
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    z-index: 1001
+    background-color: rgba(0, 0, 0, 0.5)
+    display: flex
+    justify-content: center
+    align-items: center
+    .modalOverlay
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: white
+        padding: 20px
+        border-radius: 5px
+        max-width: 40vw 
+        h1
+            font-size: 3.5vmin
+            margin-bottom: 1vmin
+        p
+            font-size: 2vmin
+            margin-bottom: 1vmin
+        .modalContainer
+            margin-bottom: 1vmin
+            .inputBlock
+                display: inline-flexbox
+                .modalContainerInput
+                    width: 30vmin
+                    height: 3.5vmin
+                    border: 1.5px solid rgb(0, 0, 0)
+                    border-radius: 0
+                    margin: 0.4vmin
+                    padding:  0  10px
+                    &:focus
+                        background: rgba(225, 225, 225, 0.413)
+                        outline: none
+        .buttonBlock
+            display: flex
+            width: 100%
+            justify-content: space-around
+            .button
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 0.5vw
+                border-radius: 0.51vmin
+                transition: color 0.2s ease, background-color 0.2s ease
+                p
+                    margin: 0
+            .buttonInput
+                background-color: rgba(255, 94, 30, 0.471)
+                &:hover
+                    color: #fff
+                    background-color: rgb(255, 94, 30)
+                &:active
+                    background-color: rgba(255, 94, 30, 0.471)
+            .closeButton
+                background-color: rgba(126, 126, 126, 0.284)
+                &:hover
+                    color: #fff
+                    background-color: rgb(126, 126, 126)

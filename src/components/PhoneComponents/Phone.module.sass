@@ -1,0 +1,42 @@
+.phone
+    width: 100%
+    min-height: 100vh
+    .phoneContainer
+        width: 100%
+        .phoneSections
+            padding: calc(15px + (20 - 15)*(100vw - 320px) / (1024 - 320))
+            background-color: rgb(238, 238, 238)
+        .header
+            display: flex
+            width: 100%
+            p
+            align-items: center
+            justify-content: center
+            min-height: calc(60px + (80 - 60)*(100vw - 320px) / (1024 - 320))
+            background: rgb(255, 95, 30)
+            .headerBlock
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 100%
+                padding: 0 calc(8px + (20 - 8)*(100vw - 320px) / (1024 - 320))
+                .logo
+                    display: inline-block
+                    margin:  calc(5px + (10 - 5)*(100vw - 320px) / (1024 - 320))
+                    img
+                        width: calc(50px + (70 - 50)*(100vw - 320px) / (1024 - 320))
+                .headerButton
+                    .button
+                        display: inline
+                        min-width: calc(35px + (60 - 35)*(100vw - 320px) / (1024 - 320))
+                        height: calc(35px + (60 - 35)*(100vw - 320px) / (1024 - 320))
+                        .buttonBlock
+                            background-color: #fff
+                            width: calc(40px + (60 - 40)*(100vw - 320px) / (1024 - 320))
+                            height: calc(6px + (8 - 6)*(100vw - 320px) / (1024 - 320))
+                            margin: 5px
+                            transition: margin .2s ease
+                            border-radius: 3px
+                    &:active
+                        .buttonBlock
+                            margin: 10px 0
